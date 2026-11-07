@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVAS- CITAS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/scrip/sp.js"></script>
+   
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Barberia & estilo</h1>
+            <p>Tu corte en las mejores manos</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#reservar">agendar Cita</a></li>
+                <li><a href="admin.html">Panel Dueno</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+<main>
+
+        
+        <section id="inicio" class="hero">
+
+            <h2>Reserva tu turno en menos de 1 minuto</h2>
+            <p>Elige tu servicio, fecha y profesional. Te confirmamos directo a tu WhatsApp.</p>
+        </section>
+
+
+        <!-- SECCION DE SERVICIOS Y PRECIOS -->
+        <section id="servicios" class="contenedor-servicios">
+            <h2>Nuestros Servicios</h2>
+            <p>Selecciona el servicio que necesitas al momento de agendar:</p>
+            
+            <ul class="lista-servicios">
+                <li>
+                    <strong>Corte de Cabello Clasico:</strong> Asesoria de imagen + lavado. 
+                    <span class="precio">$25.000</span>
+                </li>
+
+                <li>
+                    <strong>Barba Tradicional:</strong> Perfilado con toalla caliente. 
+                    <span class="precio">$18.000</span>
+
+                </li>
+                <li>
+                    <strong>Combo Imperial:</strong> Corte + Barba + Mascarilla facial. 
+                    <span class="precio">$38.000</span>
+                </li>
+            </ul>
+        </section>
+
+        
+        <section id="reservar" class="contenedor-formulario">
+
+            <h2>Agendar una Cita</h2>
+            
+            <form action="#" method="post" class="form-cita">
+                
+                <!--informacion delcliente -->
+                <div class="grupo-input">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="telefono">Numero de WhatsApp:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="" required>
+                </div>
+
+
+                <div class="grupo-input">
+                    <label for="servicio">Servicio a Reservar:</label>
+                    <select id="servicio" name="servicio" required>
+
+                        <option value="" disabled selected>Selecciona un servicio </option>
+                       
+                        <option value="corte">Corte de Cabello (12000)</option>
+                        <option value="barba">Barba Tradicional (5000)</option>
+                        <option value="combo">Combo Imperial (15000)</option>
+                    </select>
+                </div>
+
+                <!--Fecha y Hora -->
+
+                <div class="grupo-input">
+                    <label for="fecha">Fecha:</label>
+
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+        
+                <div class="grupo-input">
+                    <label for="notas">Observaciones o notas:</label>
+                    <textarea id="notas" name="notas" rows="3" placeholder=""></textarea>
+                </div>
+
+            
+                <button type="submit" class="btn-reservar">Confirmar Cita por WhatsApp</button>
+            </form>
+        </section>
+
+    </main>
+
+   
+    <footer>
+        <p> &copy; 2026 Barberia & Estilo.</p>
+        <p>Monteria, Colombia  </p>
+    </footer>
+
+    
+</body>
+</html>
